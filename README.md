@@ -71,9 +71,36 @@ Common headers include:
 - Bonus Due
 - Recitation
 
+Two CSV files are included in this repository:
+
+- `course_schedule_import_blank_template.csv` is a blank 15-week template with three class meeting rows per week.
+- `course_schedule_import_example.csv` shows example entries, including multiple lines inside one cell.
+
 To import a CSV file, save your Excel file as CSV UTF-8, then click **Import CSV / Excel paste** and choose the file.
 
 To paste from Excel, copy the schedule range including headers, click **Import CSV / Excel paste**, paste into the text box, and click **Import pasted table**.
+
+### CSV import template notes
+
+Required structure:
+
+- The first row must contain column headers.
+- Use `Week` for the week number.
+- Use `Dates` or `Date` for the class meeting date or label.
+- Other headers become schedule columns.
+
+Recommended headers:
+
+```text
+Week, Dates, Topic, Homework Due, myCourses Quiz Due, Project, Bonus Due, Recitation
+```
+
+Tips:
+
+- Put the week number only on the first row of each week; blank cells below it will be filled down during import.
+- Put Recitation information only once per week. The Schedule Builder treats a column with `Recitation` in the title as a whole-week column.
+- Multiple lines inside one Excel cell become separate draggable cards after import.
+- To import: save the completed Excel file as CSV UTF-8, then use **Import CSV / Excel paste** in the Schedule Builder.
 
 Blank week cells are filled down automatically. Multiple lines inside one Excel cell become separate draggable cards.
 
