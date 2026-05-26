@@ -30,7 +30,7 @@ table{width:100%;border-collapse:separate;border-spacing:0;table-layout:fixed}th
 <h2>Auto-fill dates</h2>
 <div class="row"><label>Start date<input id="startDate" type="date"></label><label>End date<input id="endDate" type="date"></label><label>Date format<select id="dateFormat"><option value="short">Mon Aug 25</option><option value="numeric">8/25</option><option value="iso">2026-08-25</option><option value="long">Monday, Aug 25</option></select></label></div>
 <div class="row days"><span>Class meeting days:</span><label><input type="checkbox" value="1">Mon</label><label><input type="checkbox" value="2">Tue</label><label><input type="checkbox" value="3">Wed</label><label><input type="checkbox" value="4">Thu</label><label><input type="checkbox" value="5">Fri</label><label><input type="checkbox" value="6">Sat</label><label><input type="checkbox" value="0">Sun</label></div>
-<div class="row"><label><input id="preserveCards" type="checkbox"> Keep existing cards in the same relative week/row positions</label></div>
+<div class="row"><label><input id="preserveCards" type="checkbox" checked> Keep existing cards in the same relative week/row positions</label></div>
 <button class="primary" onclick="autoFillDates()">Create date rows</button><button onclick="showPanel('datesPanel')">Close</button><p class="printNote">You can edit, add, or remove unusual dates after auto-fill.</p>
 </section>
 <section id="importPanel" class="panel">
